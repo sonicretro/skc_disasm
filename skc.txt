@@ -1,0 +1,32 @@
+/* Sonic & Knuckles Collection Split
+   MainMemory
+   March 17, 2011 */
+
+#dir Levels
+#dir Levels\AIZ
+#dir Levels\AIZ\Tiles
+#split	0x001F19FC,0x001F280E,Levels\AIZ\Tiles\Act 1 Primary.bin
+#split	0x001F280E,0x001F57E0,Levels\AIZ\Tiles\Act 1 Secondary.bin
+#dir Levels\AIZ\Blocks
+#split	0x001EFADC,0x001EFCDC,Levels\AIZ\Blocks\Act 1 Primary.bin
+#split	0x001EFCDC,0x001F091C,Levels\AIZ\Blocks\Act 1 Secondary.bin
+#dir Levels\AIZ\Chunks
+#split	0x001F7FD2,0x001FB962,Levels\AIZ\Chunks\Act 1.bin
+#dir Levels\AIZ\Layout
+#split	0x00259F34,0x0025A780,Levels\AIZ\Layout\1.bin
+#dir Levels\AIZ\Object Pos
+#split	0x00406FBE,0x0040735A,Levels\AIZ\Object Pos\1.bin
+#dir Levels\AIZ\Ring Pos
+#split	0x004084FA,0x004086A0,Levels\AIZ\Ring Pos\1.bin
+#dir Levels\AIZ\Start Location
+#dir Levels\AIZ\Start Location\Sonic
+#split	0x003F6F24,0x003F6F28,Levels\AIZ\Start Location\Sonic\1.bin
+#dir Levels\AIZ\Start Location\Knuckles
+#split	0x003F6FE4,0x003F6FE8,Levels\AIZ\Start Location\Knuckles\1.bin
+#dir General
+#dir General\Sprites
+#dir General\Sprites\Sonic
+#dir General\Sprites\Sonic\Palettes
+#split	0x0026FBB6,0x0026FBF6,General\Sprites\Sonic\Palettes\SonicAndTails.bin
+#dir Levels\AIZ\Palettes
+#split	0x0026FC96,0x0026FCF6,Levels\AIZ\Palettes\Intro.bin
