@@ -1,32 +1,729 @@
 /* Sonic & Knuckles Collection Split
    MainMemory
-   March 17, 2011 */
+   Sunday, April 26, 2015 */
 
-#dir Levels
-#dir Levels\AIZ
-#dir Levels\AIZ\Tiles
-#split	0x001F19FC,0x001F280E,Levels\AIZ\Tiles\Act 1 Primary.bin
-#split	0x001F280E,0x001F57E0,Levels\AIZ\Tiles\Act 1 Secondary.bin
-#dir Levels\AIZ\Blocks
+#dir	General
+#dir	General\Ending
+#dir	General\Ending\Palettes
+#split	0x00270976,0x002709D6,General\Ending\Palettes\Ending 1.bin
+#split	0x002709D6,0x00270A36,General\Ending\Palettes\Ending 2.bin
+#dir	General\Sprites
+#dir	General\Sprites\Knuckles
+#dir	General\Sprites\Knuckles\Palettes
+#split	0x0026FC76,0x0026FC96,General\Sprites\Knuckles\Palettes\Main.bin
+#dir	General\Sprites\Sonic
+#dir	General\Sprites\Sonic\Palettes
+#split	0x0026FBB6,0x0026FBF6,General\Sprites\Sonic\Palettes\SonicAndTails.bin
+#split	0x0026FBF6,0x0026FC76,General\Sprites\Sonic\Palettes\SonicAndTailsS2.bin
+#dir	Levels
+#dir	Levels\AIZ
+#dir	Levels\AIZ\Blocks
+#split	0x001F091C,0x001F19FC,Levels\AIZ\Blocks\Act 1 Main Level.bin
 #split	0x001EFADC,0x001EFCDC,Levels\AIZ\Blocks\Act 1 Primary.bin
 #split	0x001EFCDC,0x001F091C,Levels\AIZ\Blocks\Act 1 Secondary.bin
-#dir Levels\AIZ\Chunks
+#split	0x001FC3E4,0x001FCC84,Levels\AIZ\Blocks\Act 2 Primary.bin
+#split	0x001FCC84,0x001FD704,Levels\AIZ\Blocks\Act 2 Secondary.bin
+#dir	Levels\AIZ\Chunks
 #split	0x001F7FD2,0x001FB962,Levels\AIZ\Chunks\Act 1.bin
-#dir Levels\AIZ\Layout
+#split	0x0020157A,0x0020558A,Levels\AIZ\Chunks\Act 2.bin
+#dir	Levels\AIZ\Collision
+#split	0x0024E474,0x0024EA74,Levels\AIZ\Collision\1.bin
+#split	0x0024EA74,0x0024F074,Levels\AIZ\Collision\2.bin
+#dir	Levels\AIZ\Layout
 #split	0x00259F34,0x0025A780,Levels\AIZ\Layout\1.bin
-#dir Levels\AIZ\Object Pos
+#split	0x0025A780,0x0025B4E6,Levels\AIZ\Layout\2.bin
+#dir	Levels\AIZ\Object Pos
 #split	0x00406FBE,0x0040735A,Levels\AIZ\Object Pos\1.bin
-#dir Levels\AIZ\Ring Pos
-#split	0x004084FA,0x004086A0,Levels\AIZ\Ring Pos\1.bin
-#dir Levels\AIZ\Start Location
-#dir Levels\AIZ\Start Location\Sonic
-#split	0x003F6F24,0x003F6F28,Levels\AIZ\Start Location\Sonic\1.bin
-#dir Levels\AIZ\Start Location\Knuckles
-#split	0x003F6FE4,0x003F6FE8,Levels\AIZ\Start Location\Knuckles\1.bin
-#dir General
-#dir General\Sprites
-#dir General\Sprites\Sonic
-#dir General\Sprites\Sonic\Palettes
-#split	0x0026FBB6,0x0026FBF6,General\Sprites\Sonic\Palettes\SonicAndTails.bin
-#dir Levels\AIZ\Palettes
+#split	0x004144C2,0x0041484C,Levels\AIZ\Object Pos\1_S3.bin
+#split	0x0040735A,0x004084FA,Levels\AIZ\Object Pos\2.bin
+#split	0x0041484C,0x004159DA,Levels\AIZ\Object Pos\2_S3.bin
+#dir	Levels\AIZ\Palettes
+#split	0x0026FE96,0x0026FF16,Levels\AIZ\Palettes\Act 2 Water.bin
+#split	0x0026FDB6,0x0026FE16,Levels\AIZ\Palettes\Boss.bin
+#split	0x0026FD56,0x0026FDB6,Levels\AIZ\Palettes\Fire.bin
 #split	0x0026FC96,0x0026FCF6,Levels\AIZ\Palettes\Intro.bin
+#split	0x0026FCF6,0x0026FD56,Levels\AIZ\Palettes\Main.bin
+#split	0x0026FE16,0x0026FE96,Levels\AIZ\Palettes\Water.bin
+#dir	Levels\AIZ\Ring Pos
+#split	0x004084FA,0x004086A0,Levels\AIZ\Ring Pos\1.bin
+#split	0x004159DA,0x00415B82,Levels\AIZ\Ring Pos\1_S3.bin
+#split	0x004086A0,0x00408B76,Levels\AIZ\Ring Pos\2.bin
+#split	0x00415B82,0x00416066,Levels\AIZ\Ring Pos\2_S3.bin
+#dir	Levels\AIZ\Start Location
+#dir	Levels\AIZ\Start Location\Knuckles
+#split	0x003F6FE4,0x003F6FE8,Levels\AIZ\Start Location\Knuckles\1.bin
+#split	0x003F6FE8,0x003F6FEC,Levels\AIZ\Start Location\Knuckles\2.bin
+#split	0x003F704C,0x003F7050,Levels\AIZ\Start Location\Knuckles\Intro.bin
+#dir	Levels\AIZ\Start Location\Sonic
+#split	0x003F6F24,0x003F6F28,Levels\AIZ\Start Location\Sonic\1.bin
+#split	0x003F6F28,0x003F6F2C,Levels\AIZ\Start Location\Sonic\2.bin
+#split	0x003F6F8C,0x003F6F90,Levels\AIZ\Start Location\Sonic\Intro.bin
+#dir	Levels\AIZ\Tiles
+#split	0x001F57E0,0x001F7FD2,Levels\AIZ\Tiles\Act 1 Main Level.bin
+#split	0x001F19FC,0x001F280E,Levels\AIZ\Tiles\Act 1 Primary.bin
+#split	0x001F280E,0x001F57E0,Levels\AIZ\Tiles\Act 1 Secondary.bin
+#split	0x001FD964,0x001FFB16,Levels\AIZ\Tiles\Act 2 Primary.bin
+#split	0x001FFB16,0x00200C58,Levels\AIZ\Tiles\Act 2 Secondary.bin
+#dir	Levels\ALZ
+#dir	Levels\ALZ\Blocks
+#split	0x0023A456,0x0023AF16,Levels\ALZ\Blocks\Primary.bin
+#dir	Levels\ALZ\Chunks
+#split	0x0023DCC8,0x0023E358,Levels\ALZ\Chunks\Primary.bin
+#dir	Levels\ALZ\Collision
+#split	0x00256274,0x00256874,Levels\ALZ\Collision\1.bin
+#dir	Levels\ALZ\Layout
+#split	0x0026DD9C,0x0026DF68,Levels\ALZ\Layout\1.bin
+#dir	Levels\ALZ\Object Pos
+#split	0x00414412,0x00414448,Levels\ALZ\Object Pos\1.bin
+#dir	Levels\ALZ\Palettes
+#split	0x00270B56,0x00270BB6,Levels\ALZ\Palettes\Main.bin
+#dir	Levels\ALZ\Ring Pos
+#split	0x00414448,0x00414456,Levels\ALZ\Ring Pos\1.bin
+#dir	Levels\ALZ\Start Location
+#dir	Levels\ALZ\Start Location\Knuckles
+#split	0x003F7054,0x003F7058,Levels\ALZ\Start Location\Knuckles\1.bin
+#split	0x003F7058,0x003F705C,Levels\ALZ\Start Location\Knuckles\2.bin
+#dir	Levels\ALZ\Start Location\Sonic
+#split	0x003F6F94,0x003F6F98,Levels\ALZ\Start Location\Sonic\1.bin
+#split	0x003F6F98,0x003F6F9C,Levels\ALZ\Start Location\Sonic\2.bin
+#dir	Levels\ALZ\Tiles
+#split	0x0023AF16,0x0023DCC8,Levels\ALZ\Tiles\Primary.bin
+#dir	Levels\BPZ
+#dir	Levels\BPZ\Blocks
+#split	0x0023E358,0x0023EC28,Levels\BPZ\Blocks\Primary.bin
+#dir	Levels\BPZ\Chunks
+#split	0x00240C0A,0x002412FA,Levels\BPZ\Chunks\Primary.bin
+#dir	Levels\BPZ\Collision
+#split	0x00256874,0x00256E74,Levels\BPZ\Collision\1.bin
+#dir	Levels\BPZ\Layout
+#split	0x0026DF68,0x0026E0BC,Levels\BPZ\Layout\1.bin
+#dir	Levels\BPZ\Object Pos
+#split	0x00414456,0x004144B6,Levels\BPZ\Object Pos\1.bin
+#dir	Levels\BPZ\Palettes
+#split	0x00270BB6,0x00270C16,Levels\BPZ\Palettes\Main.bin
+#dir	Levels\BPZ\Ring Pos
+#split	0x004144B6,0x004144C2,Levels\BPZ\Ring Pos\1.bin
+#dir	Levels\BPZ\Start Location
+#dir	Levels\BPZ\Start Location\Knuckles
+#split	0x003F705C,0x003F7060,Levels\BPZ\Start Location\Knuckles\1.bin
+#split	0x003F7060,0x003F7064,Levels\BPZ\Start Location\Knuckles\2.bin
+#dir	Levels\BPZ\Start Location\Sonic
+#split	0x003F6F9C,0x003F6FA0,Levels\BPZ\Start Location\Sonic\1.bin
+#split	0x003F6FA0,0x003F6FA4,Levels\BPZ\Start Location\Sonic\2.bin
+#dir	Levels\BPZ\Tiles
+#split	0x0023EC28,0x00240C0A,Levels\BPZ\Tiles\Primary.bin
+#dir	Levels\CGZ
+#dir	Levels\CGZ\Blocks
+#split	0x00243DFC,0x0024454C,Levels\CGZ\Blocks\Primary.bin
+#dir	Levels\CGZ\Chunks
+#split	0x00246AEE,0x00246FAE,Levels\CGZ\Chunks\Primary.bin
+#dir	Levels\CGZ\Collision
+#split	0x00257474,0x00257A74,Levels\CGZ\Collision\1.bin
+#dir	Levels\CGZ\Layout
+#split	0x0026E1B4,0x0026E2AC,Levels\CGZ\Layout\1.bin
+#dir	Levels\CGZ\Object Pos
+#split	0x0040F13E,0x0040F19E,Levels\CGZ\Object Pos\1.bin
+#dir	Levels\CGZ\Palettes
+#split	0x00270C76,0x00270CD6,Levels\CGZ\Palettes\Main.bin
+#dir	Levels\CGZ\Ring Pos
+#split	0x0040F19E,0x0040F1AA,Levels\CGZ\Ring Pos\1.bin
+#dir	Levels\CGZ\Start Location
+#dir	Levels\CGZ\Start Location\Knuckles
+#split	0x003F706C,0x003F7070,Levels\CGZ\Start Location\Knuckles\1.bin
+#split	0x003F7070,0x003F7074,Levels\CGZ\Start Location\Knuckles\2.bin
+#dir	Levels\CGZ\Start Location\Sonic
+#split	0x003F6FAC,0x003F6FB0,Levels\CGZ\Start Location\Sonic\1.bin
+#split	0x003F6FB0,0x003F6FB4,Levels\CGZ\Start Location\Sonic\2.bin
+#dir	Levels\CGZ\Tiles
+#split	0x0024454C,0x00246AEE,Levels\CGZ\Tiles\Primary.bin
+#dir	Levels\CNZ
+#dir	Levels\CNZ\Blocks
+#split	0x00218FC6,0x0021A006,Levels\CNZ\Blocks\Primary.bin
+#dir	Levels\CNZ\Chunks
+#split	0x0021D228,0x00220348,Levels\CNZ\Chunks\Primary.bin
+#dir	Levels\CNZ\Collision
+#split	0x00250874,0x00250E74,Levels\CNZ\Collision\1.bin
+#dir	Levels\CNZ\Layout
+#split	0x0025E8F6,0x0025F4C0,Levels\CNZ\Layout\1.bin
+#split	0x0025F4C0,0x0026044E,Levels\CNZ\Layout\2.bin
+#dir	Levels\CNZ\Object Pos
+#split	0x0040CC22,0x0040E836,Levels\CNZ\Object Pos\1.bin
+#split	0x0041C21A,0x0041CD06,Levels\CNZ\Object Pos\1_S3.bin
+#split	0x0040D798,0x0040E836,Levels\CNZ\Object Pos\2.bin
+#split	0x0041CD06,0x0041DC84,Levels\CNZ\Object Pos\2_S3.bin
+#dir	Levels\CNZ\Palettes
+#split	0x00270136,0x00270196,Levels\CNZ\Palettes\Main.bin
+#split	0x00270196,0x00270216,Levels\CNZ\Palettes\Water.bin
+#dir	Levels\CNZ\Ring Pos
+#split	0x0040E836,0x0040ED1C,Levels\CNZ\Ring Pos\1.bin
+#split	0x0041DC84,0x0041E11C,Levels\CNZ\Ring Pos\1_S3.bin
+#split	0x0040ED1C,0x0040F13E,Levels\CNZ\Ring Pos\2.bin
+#split	0x0041E11C,0x0041E4E6,Levels\CNZ\Ring Pos\2_S3.bin
+#dir	Levels\CNZ\Start Location
+#dir	Levels\CNZ\Start Location\Knuckles
+#split	0x003F6FFC,0x003F7000,Levels\CNZ\Start Location\Knuckles\1.bin
+#split	0x003F7000,0x003F7004,Levels\CNZ\Start Location\Knuckles\2.bin
+#dir	Levels\CNZ\Start Location\Sonic
+#split	0x003F6F3C,0x003F6F40,Levels\CNZ\Start Location\Sonic\1.bin
+#split	0x003F6F40,0x003F6F44,Levels\CNZ\Start Location\Sonic\2.bin
+#dir	Levels\CNZ\Tiles
+#split	0x0021A006,0x0021D228,Levels\CNZ\Tiles\Primary.bin
+#dir	Levels\DDZ
+#dir	Levels\DDZ\Blocks
+#split	0x0019BBB6,0x0019C046,Levels\DDZ\Blocks\Primary.bin
+#dir	Levels\DDZ\Chunks
+#split	0x0019D828,0x0019DA68,Levels\DDZ\Chunks\Primary.bin
+#dir	Levels\DDZ\Collision
+#split	0x00255C74,0x00256274,Levels\DDZ\Collision\1.bin
+#dir	Levels\DDZ\Layout
+#split	0x0026DC90,0x0026DD9C,Levels\DDZ\Layout\1.bin
+#dir	Levels\DDZ\Object Pos
+#split	0x004135AA,0x004140DE,Levels\DDZ\Object Pos\1.bin
+#split	0x004140DE,0x004140E4,Levels\DDZ\Object Pos\2.bin
+#dir	Levels\DDZ\Palettes
+#split	0x00270AF6,0x00270B56,Levels\DDZ\Palettes\Main.bin
+#dir	Levels\DDZ\Ring Pos
+#split	0x004140E4,0x004143F2,Levels\DDZ\Ring Pos\1.bin
+#split	0x004143F2,0x004143FE,Levels\DDZ\Ring Pos\2.bin
+#dir	Levels\DDZ\Start Location
+#dir	Levels\DDZ\Start Location\Knuckles
+#split	0x003F7044,0x003F7048,Levels\DDZ\Start Location\Knuckles\1.bin
+#split	0x003F7048,0x003F704C,Levels\DDZ\Start Location\Knuckles\2.bin
+#dir	Levels\DDZ\Start Location\Sonic
+#split	0x003F6F84,0x003F6F88,Levels\DDZ\Start Location\Sonic\1.bin
+#split	0x003F6F88,0x003F6F8C,Levels\DDZ\Start Location\Sonic\2.bin
+#dir	Levels\DDZ\Tiles
+#split	0x0019C046,0x0019D828,Levels\DDZ\Tiles\Primary.bin
+#dir	Levels\DEZ
+#dir	Levels\DEZ\Blocks
+#split	0x00196920,0x00196AD0,Levels\DEZ\Blocks\Act 1 Secondary.bin
+#split	0x00197132,0x001972C2,Levels\DEZ\Blocks\Act 2 Secondary.bin
+#split	0x00197C94,0x001986F4,Levels\DEZ\Blocks\Act 3.bin
+#split	0x001910CE,0x00191FDE,Levels\DEZ\Blocks\Primary.bin
+#dir	Levels\DEZ\Chunks
+#split	0x0019B546,0x0019BBB6,Levels\DEZ\Chunks\Act 3.bin
+#split	0x00194360,0x00196920,Levels\DEZ\Chunks\Primary.bin
+#dir	Levels\DEZ\Collision
+#split	0x00255674,0x00255C74,Levels\DEZ\Collision\1.bin
+#dir	Levels\DEZ\Layout
+#split	0x0026BE34,0x0026CE02,Levels\DEZ\Layout\1.bin
+#split	0x0026CE02,0x0026DC90,Levels\DEZ\Layout\2.bin
+#split	0x0026F0C6,0x0026F1BE,Levels\DEZ\Layout\3.bin
+#dir	Levels\DEZ\Object Pos
+#split	0x004117A2,0x00412036,Levels\DEZ\Object Pos\1.bin
+#split	0x00412036,0x00412BD0,Levels\DEZ\Object Pos\2.bin
+#split	0x00406F76,0x00406F7C,Levels\DEZ\Object Pos\3.bin
+#dir	Levels\DEZ\Palettes
+#split	0x00270A36,0x00270A96,Levels\DEZ\Palettes\1.bin
+#split	0x00270A96,0x00270AF6,Levels\DEZ\Palettes\2.bin
+#split	0x00270F16,0x00270F76,Levels\DEZ\Palettes\Boss.bin
+#dir	Levels\DEZ\Ring Pos
+#split	0x00412BD0,0x0041302E,Levels\DEZ\Ring Pos\1.bin
+#split	0x0041302E,0x0041334C,Levels\DEZ\Ring Pos\2.bin
+#split	0x00406FB2,0x00406FBE,Levels\DEZ\Ring Pos\3.bin
+#dir	Levels\DEZ\Start Location
+#dir	Levels\DEZ\Start Location\Knuckles
+#split	0x003F703C,0x003F7040,Levels\DEZ\Start Location\Knuckles\1.bin
+#split	0x003F7040,0x003F7044,Levels\DEZ\Start Location\Knuckles\2.bin
+#split	0x003F709C,0x003F70A0,Levels\DEZ\Start Location\Knuckles\Boss.bin
+#dir	Levels\DEZ\Start Location\Sonic
+#split	0x003F6F7C,0x003F6F80,Levels\DEZ\Start Location\Sonic\1.bin
+#split	0x003F6F80,0x003F6F84,Levels\DEZ\Start Location\Sonic\2.bin
+#split	0x003F6FDC,0x003F6FE0,Levels\DEZ\Start Location\Sonic\Boss.bin
+#dir	Levels\DEZ\Tiles
+#split	0x00196AD0,0x00197132,Levels\DEZ\Tiles\Act 1 Secondary.bin
+#split	0x001972C2,0x00197C94,Levels\DEZ\Tiles\Act 2 Secondary.bin
+#split	0x001986F4,0x0019B546,Levels\DEZ\Tiles\Final Boss Act.bin
+#split	0x00191FDE,0x00194360,Levels\DEZ\Tiles\Primary.bin
+#dir	Levels\DPZ
+#dir	Levels\DPZ\Blocks
+#split	0x002412FA,0x00241CDA,Levels\DPZ\Blocks\Primary.bin
+#dir	Levels\DPZ\Chunks
+#split	0x002437CC,0x00243DFC,Levels\DPZ\Chunks\Primary.bin
+#dir	Levels\DPZ\Collision
+#split	0x00256E74,0x00257474,Levels\DPZ\Collision\1.bin
+#dir	Levels\DPZ\Layout
+#split	0x0026E0BC,0x0026E1B4,Levels\DPZ\Layout\1.bin
+#dir	Levels\DPZ\Object Pos
+#split	0x0040CBAA,0x0040CC16,Levels\DPZ\Object Pos\1.bin
+#dir	Levels\DPZ\Palettes
+#split	0x00270C16,0x00270C76,Levels\DPZ\Palettes\Main.bin
+#dir	Levels\DPZ\Ring Pos
+#split	0x0040CC16,0x0040CC22,Levels\DPZ\Ring Pos\1.bin
+#dir	Levels\DPZ\Start Location
+#dir	Levels\DPZ\Start Location\Knuckles
+#split	0x003F7064,0x003F7068,Levels\DPZ\Start Location\Knuckles\1.bin
+#split	0x003F7068,0x003F706C,Levels\DPZ\Start Location\Knuckles\2.bin
+#dir	Levels\DPZ\Start Location\Sonic
+#split	0x003F6FA4,0x003F6FA8,Levels\DPZ\Start Location\Sonic\1.bin
+#split	0x003F6FA8,0x003F6FAC,Levels\DPZ\Start Location\Sonic\2.bin
+#dir	Levels\DPZ\Tiles
+#split	0x00241CDA,0x002437CC,Levels\DPZ\Tiles\Primary.bin
+#dir	Levels\EMZ
+#dir	Levels\EMZ\Blocks
+#split	0x00246FAE,0x00247A5E,Levels\EMZ\Blocks\Primary.bin
+#dir	Levels\EMZ\Chunks
+#split	0x0024A690,0x0024ADA0,Levels\EMZ\Chunks\Primary.bin
+#dir	Levels\EMZ\Collision
+#split	0x00257A74,0x00258074,Levels\EMZ\Collision\1.bin
+#dir	Levels\EMZ\Layout
+#split	0x0026E2AC,0x0026E3A4,Levels\EMZ\Layout\1.bin
+#dir	Levels\EMZ\Object Pos
+#split	0x003FBA56,0x003FBAB6,Levels\EMZ\Object Pos\1.bin
+#dir	Levels\EMZ\Palettes
+#split	0x00270CD6,0x00270D36,Levels\EMZ\Palettes\Main.bin
+#dir	Levels\EMZ\Ring Pos
+#split	0x003FBAB6,0x003FBAC2,Levels\EMZ\Ring Pos\1.bin
+#dir	Levels\EMZ\Start Location
+#dir	Levels\EMZ\Start Location\Knuckles
+#split	0x003F7074,0x003F7078,Levels\EMZ\Start Location\Knuckles\1.bin
+#split	0x003F7078,0x003F707C,Levels\EMZ\Start Location\Knuckles\2.bin
+#dir	Levels\EMZ\Start Location\Sonic
+#split	0x003F6FB4,0x003F6FB8,Levels\EMZ\Start Location\Sonic\1.bin
+#split	0x003F6FB8,0x003F6FBC,Levels\EMZ\Start Location\Sonic\2.bin
+#dir	Levels\EMZ\Tiles
+#split	0x00247A5E,0x0024A690,Levels\EMZ\Tiles\Primary.bin
+#dir	Levels\FBZ
+#dir	Levels\FBZ\Blocks
+#split	0x001536F8,0x00154338,Levels\FBZ\Blocks\Primary.bin
+#dir	Levels\FBZ\Chunks
+#split	0x0015679A,0x0015960A,Levels\FBZ\Chunks\Primary.bin
+#dir	Levels\FBZ\Collision
+#split	0x00250E74,0x00251474,Levels\FBZ\Collision\1.bin
+#dir	Levels\FBZ\Layout
+#split	0x0026044E,0x002611F6,Levels\FBZ\Layout\1.bin
+#split	0x002611F6,0x00262184,Levels\FBZ\Layout\2.bin
+#dir	Levels\FBZ\Object Pos
+#split	0x0040F1AA,0x0040FB88,Levels\FBZ\Object Pos\1.bin
+#split	0x0040FB88,0x004105DE,Levels\FBZ\Object Pos\2.bin
+#dir	Levels\FBZ\Palettes
+#split	0x00270216,0x00270276,Levels\FBZ\Palettes\FBZ1.bin
+#split	0x00270276,0x002702D6,Levels\FBZ\Palettes\FBZ2.bin
+#dir	Levels\FBZ\Ring Pos
+#split	0x004105DE,0x00410A90,Levels\FBZ\Ring Pos\1.bin
+#split	0x00410A90,0x00410EA2,Levels\FBZ\Ring Pos\2.bin
+#dir	Levels\FBZ\Start Location
+#dir	Levels\FBZ\Start Location\Knuckles
+#split	0x003F7004,0x003F7008,Levels\FBZ\Start Location\Knuckles\1.bin
+#split	0x003F7008,0x003F700C,Levels\FBZ\Start Location\Knuckles\2.bin
+#dir	Levels\FBZ\Start Location\Sonic
+#split	0x003F6F44,0x003F6F48,Levels\FBZ\Start Location\Sonic\1.bin
+#split	0x003F6F48,0x003F6F4C,Levels\FBZ\Start Location\Sonic\2.bin
+#dir	Levels\FBZ\Tiles
+#split	0x00154338,0x0015679A,Levels\FBZ\Tiles\Primary.bin
+#dir	Levels\Gumball
+#dir	Levels\Gumball\Blocks
+#split	0x0024ADA0,0x0024B1C0,Levels\Gumball\Blocks\Primary.bin
+#dir	Levels\Gumball\Chunks
+#split	0x0024BF12,0x0024C2B4,Levels\Gumball\Chunks\Primary.bin
+#dir	Levels\Gumball\Collision
+#split	0x00258074,0x00258674,Levels\Gumball\Collision\1.bin
+#dir	Levels\Gumball\Layout
+#split	0x0026E3A4,0x0026E45C,Levels\Gumball\Layout\1.bin
+#dir	Levels\Gumball\Object Pos
+#split	0x003FD33A,0x003FD3FA,Levels\Gumball\Object Pos\1.bin
+#dir	Levels\Gumball\Palettes
+#split	0x00270D36,0x00270D96,Levels\Gumball\Palettes\Main.bin
+#dir	Levels\Gumball\Ring Pos
+#split	0x003FD3FA,0x003FD406,Levels\Gumball\Ring Pos\1.bin
+#dir	Levels\Gumball\Start Location
+#dir	Levels\Gumball\Start Location\Knuckles
+#split	0x003F707C,0x003F7080,Levels\Gumball\Start Location\Knuckles\1.bin
+#split	0x003F7080,0x003F7084,Levels\Gumball\Start Location\Knuckles\2.bin
+#dir	Levels\Gumball\Start Location\Sonic
+#split	0x003F6FBC,0x003F6FC0,Levels\Gumball\Start Location\Sonic\1.bin
+#split	0x003F6FC0,0x003F6FC4,Levels\Gumball\Start Location\Sonic\2.bin
+#dir	Levels\Gumball\Tiles
+#split	0x0024B1C0,0x0024BF12,Levels\Gumball\Tiles\Gumball.bin
+#dir	Levels\HCZ
+#dir	Levels\HCZ\Blocks
+#split	0x0020697C,0x0020720C,Levels\HCZ\Blocks\Act 1 Secondary.bin
+#split	0x0020B50E,0x0020BDFE,Levels\HCZ\Blocks\Act 2 Secondary.bin
+#split	0x0020558A,0x002059FA,Levels\HCZ\Blocks\Primary.bin
+#dir	Levels\HCZ\Chunks
+#split	0x0020945E,0x0020B50E,Levels\HCZ\Chunks\Act 1 Secondary.bin
+#split	0x0020DC80,0x0020F900,Levels\HCZ\Chunks\Act 2 Secondary.bin
+#split	0x0020663C,0x0020697C,Levels\HCZ\Chunks\Primary.bin
+#dir	Levels\HCZ\Collision
+#split	0x0024F074,0x0024F674,Levels\HCZ\Collision\1.bin
+#split	0x0024F674,0x0024FC74,Levels\HCZ\Collision\2.bin
+#dir	Levels\HCZ\Layout
+#split	0x0025B4E6,0x0025C00E,Levels\HCZ\Layout\1.bin
+#split	0x0025C00E,0x0025CEB6,Levels\HCZ\Layout\2.bin
+#dir	Levels\HCZ\Object Pos
+#split	0x00408B76,0x00409476,Levels\HCZ\Object Pos\1.bin
+#split	0x00416066,0x00416954,Levels\HCZ\Object Pos\1_S3.bin
+#split	0x00409476,0x0040A070,Levels\HCZ\Object Pos\2.bin
+#split	0x00416954,0x0041751E,Levels\HCZ\Object Pos\2_S3.bin
+#dir	Levels\HCZ\Palettes
+#split	0x0026FF16,0x0026FF76,Levels\HCZ\Palettes\1.bin
+#split	0x0026FF76,0x0026FFD6,Levels\HCZ\Palettes\2.bin
+#split	0x0026FFD6,0x00270056,Levels\HCZ\Palettes\Act 1 Water.bin
+#split	0x00270056,0x002700D6,Levels\HCZ\Palettes\Act 2 Water.bin
+#dir	Levels\HCZ\Ring Pos
+#split	0x0040A070,0x0040A756,Levels\HCZ\Ring Pos\1.bin
+#split	0x0041751E,0x00417C06,Levels\HCZ\Ring Pos\1_S3.bin
+#split	0x0040A756,0x0040AB6E,Levels\HCZ\Ring Pos\2.bin
+#split	0x00417C06,0x00417FA6,Levels\HCZ\Ring Pos\2_S3.bin
+#dir	Levels\HCZ\Start Location
+#dir	Levels\HCZ\Start Location\Knuckles
+#split	0x003F6FEC,0x003F6FF0,Levels\HCZ\Start Location\Knuckles\1.bin
+#split	0x003F6FF0,0x003F6FF4,Levels\HCZ\Start Location\Knuckles\2.bin
+#dir	Levels\HCZ\Start Location\Sonic
+#split	0x003F6F2C,0x003F6F30,Levels\HCZ\Start Location\Sonic\1.bin
+#split	0x003F6F30,0x003F6F34,Levels\HCZ\Start Location\Sonic\2.bin
+#dir	Levels\HCZ\Tiles
+#split	0x0020720C,0x0020945E,Levels\HCZ\Tiles\Act 1 Secondary.bin
+#split	0x0020BDFE,0x0020DC80,Levels\HCZ\Tiles\Act 2 Secondary.bin
+#split	0x002059FA,0x0020663C,Levels\HCZ\Tiles\Primary.bin
+#dir	Levels\HPZ
+#dir	Levels\HPZ\Blocks
+#split	0x0017DFF0,0x0017E150,Levels\HPZ\Blocks\Primary.bin
+#split	0x001823F4,0x00183224,Levels\HPZ\Blocks\Secondary.bin
+#dir	Levels\HPZ\Chunks
+#split	0x0017EEE2,0x0017EFC2,Levels\HPZ\Chunks\Primary.bin
+#split	0x001864F6,0x00187D76,Levels\HPZ\Chunks\Secondary.bin
+#dir	Levels\HPZ\Collision
+#split	0x00259874,0x00259E74,Levels\HPZ\Collision\1.bin
+#dir	Levels\HPZ\Layout
+#split	0x0026EA9E,0x0026F0C6,Levels\HPZ\Layout\1.bin
+#dir	Levels\HPZ\Object Pos
+#split	0x004048FA,0x00404A02,Levels\HPZ\Object Pos\1.bin
+#split	0x00406F7C,0x00406FB2,Levels\HPZ\Object Pos\Mini.bin
+#dir	Levels\HPZ\Palettes
+#split	0x00270EB6,0x00270F16,Levels\HPZ\Palettes\1.bin
+#dir	Levels\HPZ\Ring Pos
+#split	0x00404AD8,0x00404B64,Levels\HPZ\Ring Pos\1.bin
+#dir	Levels\HPZ\Start Location
+#dir	Levels\HPZ\Start Location\Knuckles
+#split	0x003F7098,0x003F709C,Levels\HPZ\Start Location\Knuckles\1.bin
+#split	0x003F70A0,0x003F70A4,Levels\HPZ\Start Location\Knuckles\Special Stage.bin
+#dir	Levels\HPZ\Start Location\Sonic
+#split	0x003F6FD8,0x003F6FDC,Levels\HPZ\Start Location\Sonic\1.bin
+#split	0x003F6FE0,0x003F6FE4,Levels\HPZ\Start Location\Sonic\Special Stage.bin
+#dir	Levels\HPZ\Tiles
+#split	0x0017E150,0x0017EEE2,Levels\HPZ\Tiles\Primary.bin
+#split	0x00183224,0x001864F6,Levels\HPZ\Tiles\Secondary.bin
+#dir	Levels\ICZ
+#dir	Levels\ICZ\Blocks
+#split	0x00221CEA,0x0022285A,Levels\ICZ\Blocks\Act 1 Secondary.bin
+#split	0x002265FC,0x0022729C,Levels\ICZ\Blocks\Act 2 Secondary.bin
+#split	0x00220348,0x00220628,Levels\ICZ\Blocks\Primary.bin
+#dir	Levels\ICZ\Chunks
+#split	0x002247DC,0x002265FC,Levels\ICZ\Chunks\Act 1 Secondary.bin
+#split	0x0022934E,0x0022AE1E,Levels\ICZ\Chunks\Act 2 Secondary.bin
+#split	0x00221A3A,0x00221CEA,Levels\ICZ\Chunks\Primary.bin
+#dir	Levels\ICZ\Collision
+#split	0x00251474,0x00251A74,Levels\ICZ\Collision\1.bin
+#split	0x00251A74,0x00252074,Levels\ICZ\Collision\2.bin
+#dir	Levels\ICZ\Layout
+#split	0x00262184,0x0026314C,Levels\ICZ\Layout\1.bin
+#split	0x0026314C,0x00263F9C,Levels\ICZ\Layout\2.bin
+#dir	Levels\ICZ\Object Pos
+#split	0x003FBAC2,0x003FC09E,Levels\ICZ\Object Pos\1.bin
+#split	0x0041E4E6,0x0041EA6E,Levels\ICZ\Object Pos\1_S3.bin
+#split	0x003FC09E,0x003FC8FC,Levels\ICZ\Object Pos\2.bin
+#split	0x0041EA6E,0x0041F212,Levels\ICZ\Object Pos\2_S3.bin
+#dir	Levels\ICZ\Palettes
+#split	0x002702D6,0x00270336,Levels\ICZ\Palettes\1.bin
+#split	0x00270336,0x00270396,Levels\ICZ\Palettes\2.bin
+#split	0x00270396,0x00270416,Levels\ICZ\Palettes\Act 2 Water.bin
+#dir	Levels\ICZ\Ring Pos
+#split	0x003FC8FC,0x003FCBB2,Levels\ICZ\Ring Pos\1.bin
+#split	0x0041F212,0x0041F4BE,Levels\ICZ\Ring Pos\1_S3.bin
+#split	0x003FCBB2,0x003FD33A,Levels\ICZ\Ring Pos\2.bin
+#split	0x0041F4BE,0x0041FB76,Levels\ICZ\Ring Pos\2_S3.bin
+#dir	Levels\ICZ\Start Location
+#dir	Levels\ICZ\Start Location\Knuckles
+#split	0x003F700C,0x003F7010,Levels\ICZ\Start Location\Knuckles\1.bin
+#split	0x003F7010,0x003F7014,Levels\ICZ\Start Location\Knuckles\2.bin
+#dir	Levels\ICZ\Start Location\Sonic
+#split	0x003F6F4C,0x003F6F50,Levels\ICZ\Start Location\Sonic\1.bin
+#split	0x003F6F50,0x003F6F54,Levels\ICZ\Start Location\Sonic\2.bin
+#dir	Levels\ICZ\Tiles
+#split	0x0022285A,0x002247DC,Levels\ICZ\Tiles\Act 1 Secondary.bin
+#split	0x0022729C,0x0022934E,Levels\ICZ\Tiles\Act 2 Secondary.bin
+#split	0x00220628,0x00221A3A,Levels\ICZ\Tiles\Primary.bin
+#dir	Levels\LBZ
+#dir	Levels\LBZ\Blocks
+#split	0x0022B35E,0x0022BE4E,Levels\LBZ\Blocks\Act 1 Secondary.bin
+#split	0x00232302,0x00232D42,Levels\LBZ\Blocks\Act 2 Secondary.bin
+#split	0x0022AE1E,0x0022B35E,Levels\LBZ\Blocks\Primary.bin
+#dir	Levels\LBZ\Chunks
+#split	0x0022F332,0x00232302,Levels\LBZ\Chunks\Act 1.bin
+#split	0x00237296,0x00239766,Levels\LBZ\Chunks\Act 2.bin
+#dir	Levels\LBZ\Collision
+#split	0x00252074,0x00252674,Levels\LBZ\Collision\1.bin
+#split	0x00252674,0x00252C74,Levels\LBZ\Collision\2.bin
+#dir	Levels\LBZ\Layout
+#split	0x00263F9C,0x00264F48,Levels\LBZ\Layout\1.bin
+#split	0x00264F48,0x00265E70,Levels\LBZ\Layout\2.bin
+#dir	Levels\LBZ\Object Pos
+#split	0x003FD406,0x003FDE20,Levels\LBZ\Object Pos\1.bin
+#split	0x00419F6E,0x0041A982,Levels\LBZ\Object Pos\1_S3.bin
+#split	0x003FDE20,0x003FE99C,Levels\LBZ\Object Pos\2.bin
+#split	0x0041A982,0x0041B48C,Levels\LBZ\Object Pos\2_S3.bin
+#dir	Levels\LBZ\Palettes
+#split	0x00270416,0x00270476,Levels\LBZ\Palettes\1.bin
+#split	0x00270476,0x002704D6,Levels\LBZ\Palettes\2.bin
+#split	0x00270556,0x002705B6,Levels\LBZ\Palettes\Act 2 Water 2.bin
+#split	0x002704D6,0x00270556,Levels\LBZ\Palettes\Act 2 Water.bin
+#dir	Levels\LBZ\Ring Pos
+#split	0x003FE99C,0x003FEE3A,Levels\LBZ\Ring Pos\1.bin
+#split	0x0041B48C,0x0041B7E0,Levels\LBZ\Ring Pos\1_S3.bin
+#split	0x003FEE3A,0x003FF4A4,Levels\LBZ\Ring Pos\2.bin
+#split	0x0041B7E0,0x0041BC64,Levels\LBZ\Ring Pos\2_S3.bin
+#dir	Levels\LBZ\Start Location
+#dir	Levels\LBZ\Start Location\Knuckles
+#split	0x003F7014,0x003F7018,Levels\LBZ\Start Location\Knuckles\1.bin
+#split	0x003F7018,0x003F701C,Levels\LBZ\Start Location\Knuckles\2.bin
+#dir	Levels\LBZ\Start Location\Sonic
+#split	0x003F6F54,0x003F6F58,Levels\LBZ\Start Location\Sonic\1.bin
+#split	0x003F6F58,0x003F6F5C,Levels\LBZ\Start Location\Sonic\2.bin
+#dir	Levels\LBZ\Tiles
+#split	0x0022D5A0,0x0022F332,Levels\LBZ\Tiles\Act 1 Secondary.bin
+#split	0x00233B62,0x00235304,Levels\LBZ\Tiles\Act 2 Secondary.bin
+#split	0x0022BE4E,0x0022D5A0,Levels\LBZ\Tiles\Primary.bin
+#dir	Levels\LRZ
+#dir	Levels\LRZ\Blocks
+#split	0x00170E0C,0x00171BEC,Levels\LRZ\Blocks\Act 1 Secondary.bin
+#split	0x00177D8E,0x00178ACE,Levels\LRZ\Blocks\Act 2 Secondary.bin
+#split	0x0017EFC2,0x0017F812,Levels\LRZ\Blocks\Act 3 Secondary.bin
+#split	0x001702BA,0x001703FA,Levels\LRZ\Blocks\Primary.bin
+#dir	Levels\LRZ\Chunks
+#split	0x00174FCE,0x00177D8E,Levels\LRZ\Chunks\Act 1 Secondary.bin
+#split	0x0017BA30,0x0017DFF0,Levels\LRZ\Chunks\Act 2 Secondary.bin
+#split	0x00181C04,0x001823F4,Levels\LRZ\Chunks\Act 3 Secondary.bin
+#split	0x00170D9C,0x00170E0C,Levels\LRZ\Chunks\Primary.bin
+#dir	Levels\LRZ\Collision
+#split	0x00253E74,0x00254474,Levels\LRZ\Collision\1.bin
+#split	0x00254474,0x00254A74,Levels\LRZ\Collision\2.bin
+#split	0x00259274,0x00259874,Levels\LRZ\Collision\3.bin
+#dir	Levels\LRZ\Layout
+#split	0x00269498,0x0026A2C0,Levels\LRZ\Layout\1.bin
+#split	0x0026A2C0,0x0026B048,Levels\LRZ\Layout\2.bin
+#split	0x0026E7E6,0x0026EA9E,Levels\LRZ\Layout\3.bin
+#dir	Levels\LRZ\Object Pos
+#split	0x00404CD8,0x00405B24,Levels\LRZ\Object Pos\1.bin
+#split	0x00405B24,0x004065D4,Levels\LRZ\Object Pos\2.bin
+#split	0x00404822,0x004048FA,Levels\LRZ\Object Pos\3.bin
+#dir	Levels\LRZ\Palettes
+#split	0x002707F6,0x00270856,Levels\LRZ\Palettes\1.bin
+#split	0x00270856,0x002708B6,Levels\LRZ\Palettes\2.bin
+#split	0x00270E56,0x00270EB6,Levels\LRZ\Palettes\Boss Act.bin
+#dir	Levels\LRZ\Ring Pos
+#split	0x004065D4,0x00406B06,Levels\LRZ\Ring Pos\1.bin
+#split	0x00406B06,0x00406F76,Levels\LRZ\Ring Pos\2.bin
+#split	0x00404A02,0x00404AD8,Levels\LRZ\Ring Pos\3.bin
+#dir	Levels\LRZ\Start Location
+#dir	Levels\LRZ\Start Location\Knuckles
+#split	0x003F702C,0x003F7030,Levels\LRZ\Start Location\Knuckles\1.bin
+#split	0x003F7030,0x003F7034,Levels\LRZ\Start Location\Knuckles\2.bin
+#split	0x003F7094,0x003F7098,Levels\LRZ\Start Location\Knuckles\Boss.bin
+#dir	Levels\LRZ\Start Location\Sonic
+#split	0x003F6F6C,0x003F6F70,Levels\LRZ\Start Location\Sonic\1.bin
+#split	0x003F6F70,0x003F6F74,Levels\LRZ\Start Location\Sonic\2.bin
+#split	0x003F6FD4,0x003F6FD8,Levels\LRZ\Start Location\Sonic\Boss.bin
+#dir	Levels\LRZ\Tiles
+#split	0x00171BEC,0x00174FCE,Levels\LRZ\Tiles\Act 1 Secondary.bin
+#split	0x00178ACE,0x0017BA30,Levels\LRZ\Tiles\Act 2 Secondary.bin
+#split	0x0017F812,0x00181C04,Levels\LRZ\Tiles\Boss Secondary.bin
+#split	0x001703FA,0x00170D9C,Levels\LRZ\Tiles\Primary.bin
+#dir	Levels\MGZ
+#dir	Levels\MGZ\Blocks
+#split	0x00214AF2,0x00214E02,Levels\MGZ\Blocks\Act 1 Secondary.bin
+#split	0x00216064,0x002164C4,Levels\MGZ\Blocks\Act 2 Secondary.bin
+#split	0x0020F900,0x00210250,Levels\MGZ\Blocks\Primary.bin
+#dir	Levels\MGZ\Chunks
+#split	0x002157E4,0x00216064,Levels\MGZ\Chunks\Act 1 Secondary.bin
+#split	0x00217556,0x00217F46,Levels\MGZ\Chunks\Act 2 Secondary.bin
+#split	0x002127F2,0x00214AF2,Levels\MGZ\Chunks\Primary.bin
+#dir	Levels\MGZ\Collision
+#split	0x0024FC74,0x00250274,Levels\MGZ\Collision\1.bin
+#split	0x00250274,0x00250874,Levels\MGZ\Collision\2.bin
+#dir	Levels\MGZ\Layout
+#split	0x0025CEB6,0x0025DB46,Levels\MGZ\Layout\1.bin
+#split	0x0025DB46,0x0025E8F6,Levels\MGZ\Layout\2.bin
+#dir	Levels\MGZ\Object Pos
+#split	0x0040AB6E,0x0040B61E,Levels\MGZ\Object Pos\1.bin
+#split	0x00417FA6,0x00418A3E,Levels\MGZ\Object Pos\1_S3.bin
+#split	0x0040BE12,0x0040C61C,Levels\MGZ\Object Pos\2.bin
+#split	0x00419236,0x004199EC,Levels\MGZ\Object Pos\2_S3.bin
+#dir	Levels\MGZ\Palettes
+#split	0x002700D6,0x00270136,Levels\MGZ\Palettes\Main.bin
+#dir	Levels\MGZ\Ring Pos
+#split	0x0040B61E,0x0040BE12,Levels\MGZ\Ring Pos\1.bin
+#split	0x00418A3E,0x00419236,Levels\MGZ\Ring Pos\1_S3.bin
+#split	0x0040C61C,0x0040CBAA,Levels\MGZ\Ring Pos\2.bin
+#split	0x004199EC,0x00419F6E,Levels\MGZ\Ring Pos\2_S3.bin
+#dir	Levels\MGZ\Start Location
+#dir	Levels\MGZ\Start Location\Knuckles
+#split	0x003F6FF4,0x003F6FF8,Levels\MGZ\Start Location\Knuckles\1.bin
+#split	0x003F6FF8,0x003F6FFC,Levels\MGZ\Start Location\Knuckles\2.bin
+#dir	Levels\MGZ\Start Location\Sonic
+#split	0x003F6F34,0x003F6F38,Levels\MGZ\Start Location\Sonic\1.bin
+#split	0x003F6F38,0x003F6F3C,Levels\MGZ\Start Location\Sonic\2.bin
+#dir	Levels\MGZ\Tiles
+#split	0x00214E02,0x002157E4,Levels\MGZ\Tiles\Act 1 Secondary.bin
+#split	0x002164C4,0x00217556,Levels\MGZ\Tiles\Act 2 Secondary.bin
+#split	0x00210250,0x002127F2,Levels\MGZ\Tiles\Primary.bin
+#dir	Levels\MHZ
+#dir	Levels\MHZ\Blocks
+#split	0x0015960A,0x00159EEA,Levels\MHZ\Blocks\Primary.bin
+#split	0x0015D18C,0x0015DA0C,Levels\MHZ\Blocks\Secondary.bin
+#dir	Levels\MHZ\Chunks
+#split	0x0015C33C,0x0015D18C,Levels\MHZ\Chunks\Primary.bin
+#split	0x0015EB9E,0x001611AE,Levels\MHZ\Chunks\Secondary.bin
+#dir	Levels\MHZ\Collision
+#split	0x00252C74,0x00253874,Levels\MHZ\Collision\1.bin
+#dir	Levels\MHZ\Layout
+#split	0x00265E70,0x00266BA4,Levels\MHZ\Layout\1.bin
+#split	0x00266BA4,0x00267814,Levels\MHZ\Layout\2.bin
+#dir	Levels\MHZ\Object Pos
+#split	0x003FFDC2,0x00400B96,Levels\MHZ\Object Pos\1.bin
+#split	0x00400B96,0x00401898,Levels\MHZ\Object Pos\2.bin
+#dir	Levels\MHZ\Palettes
+#split	0x002705B6,0x00270616,Levels\MHZ\Palettes\1.bin
+#split	0x00270616,0x00270676,Levels\MHZ\Palettes\2.bin
+#dir	Levels\MHZ\Ring Pos
+#split	0x00401898,0x00401E3E,Levels\MHZ\Ring Pos\1.bin
+#split	0x00401E3E,0x00402392,Levels\MHZ\Ring Pos\2.bin
+#dir	Levels\MHZ\Start Location
+#dir	Levels\MHZ\Start Location\Knuckles
+#split	0x003F701C,0x003F7020,Levels\MHZ\Start Location\Knuckles\1.bin
+#split	0x003F7020,0x003F7024,Levels\MHZ\Start Location\Knuckles\2.bin
+#dir	Levels\MHZ\Start Location\Sonic
+#split	0x003F6F5C,0x003F6F60,Levels\MHZ\Start Location\Sonic\1.bin
+#split	0x003F6F60,0x003F6F64,Levels\MHZ\Start Location\Sonic\2.bin
+#dir	Levels\MHZ\Tiles
+#split	0x00159EEA,0x0015C33C,Levels\MHZ\Tiles\Primary.bin
+#split	0x0015DA0C,0x0015EB9E,Levels\MHZ\Tiles\Secondary.bin
+#dir	Levels\Misc
+#split	0x0024C2B4,0x0024C3B4,Levels\Misc\Angles.bin
+#split	0x0024D3B4,0x0024E3B4,Levels\Misc\Height Maps Rotated.bin
+#split	0x0024C3B4,0x0024D3B4,Levels\Misc\Height Maps.bin
+#dir	Levels\Misc\Palettes
+#split	0x0026FAB6,0x0026FB36,Levels\Misc\Palettes\Unknown 1.bin
+#split	0x0026FB36,0x0026FB56,Levels\Misc\Palettes\Unknown 2.bin
+#split	0x0026FB56,0x0026FBB6,Levels\Misc\Palettes\Unknown 3.bin
+#dir	Levels\Pachinko
+#dir	Levels\Pachinko\Blocks
+#split	0x0019DA68,0x0019DE38,Levels\Pachinko\Blocks\Primary.bin
+#dir	Levels\Pachinko\Chunks
+#split	0x0019F18A,0x0019F4AA,Levels\Pachinko\Chunks\Primary.bin
+#dir	Levels\Pachinko\Collision
+#split	0x00258674,0x00258C74,Levels\Pachinko\Collision\1.bin
+#dir	Levels\Pachinko\Layout
+#split	0x0026E45C,0x0026E644,Levels\Pachinko\Layout\1.bin
+#dir	Levels\Pachinko\Object Pos
+#split	0x003FFA5A,0x003FFCB6,Levels\Pachinko\Object Pos\1.bin
+#dir	Levels\Pachinko\Palettes
+#split	0x00270D96,0x00270DF6,Levels\Pachinko\Palettes\Main.bin
+#dir	Levels\Pachinko\Ring Pos
+#split	0x003FFCB6,0x003FFDC2,Levels\Pachinko\Ring Pos\1.bin
+#dir	Levels\Pachinko\Start Location
+#dir	Levels\Pachinko\Start Location\Knuckles
+#split	0x003F7084,0x003F7088,Levels\Pachinko\Start Location\Knuckles\1.bin
+#split	0x003F7088,0x003F708C,Levels\Pachinko\Start Location\Knuckles\2.bin
+#dir	Levels\Pachinko\Start Location\Sonic
+#split	0x003F6FC4,0x003F6FC8,Levels\Pachinko\Start Location\Sonic\1.bin
+#split	0x003F6FC8,0x003F6FCC,Levels\Pachinko\Start Location\Sonic\2.bin
+#dir	Levels\Pachinko\Tiles
+#split	0x0019DE38,0x0019F18A,Levels\Pachinko\Tiles\Pachinko.bin
+#dir	Levels\Slots
+#dir	Levels\Slots\Blocks
+#split	0x0019F4AA,0x0019FDEA,Levels\Slots\Blocks\Primary.bin
+#dir	Levels\Slots\Chunks
+#split	0x001A29BC,0x001A2EAC,Levels\Slots\Chunks\Primary.bin
+#dir	Levels\Slots\Collision
+#split	0x00258C74,0x00259274,Levels\Slots\Collision\1.bin
+#dir	Levels\Slots\Layout
+#split	0x0026E644,0x0026E7E6,Levels\Slots\Layout\1.bin
+#dir	Levels\Slots\Object Pos
+#split	0x00402392,0x00402398,Levels\Slots\Object Pos\1.bin
+#dir	Levels\Slots\Palettes
+#split	0x00270DF6,0x00270E56,Levels\Slots\Palettes\Main.bin
+#dir	Levels\Slots\Ring Pos
+#split	0x00402398,0x004023A6,Levels\Slots\Ring Pos\1.bin
+#dir	Levels\Slots\Start Location
+#dir	Levels\Slots\Start Location\Knuckles
+#split	0x003F708C,0x003F7090,Levels\Slots\Start Location\Knuckles\1.bin
+#split	0x003F7090,0x003F7094,Levels\Slots\Start Location\Knuckles\2.bin
+#dir	Levels\Slots\Start Location\Sonic
+#split	0x003F6FCC,0x003F6FD0,Levels\Slots\Start Location\Sonic\1.bin
+#split	0x003F6FD0,0x003F6FD4,Levels\Slots\Start Location\Sonic\2.bin
+#dir	Levels\Slots\Tiles
+#split	0x0019FDEA,0x001A29BC,Levels\Slots\Tiles\Slots.bin
+#dir	Levels\SOZ
+#dir	Levels\SOZ\Blocks
+#split	0x001694D2,0x00169662,Levels\SOZ\Blocks\Act 1 Secondary.bin
+#split	0x0016C986,0x0016CB16,Levels\SOZ\Blocks\Act 2 Secondary.bin
+#split	0x00162860,0x00163490,Levels\SOZ\Blocks\Primary.bin
+#dir	Levels\SOZ\Chunks
+#split	0x00166A32,0x001694D2,Levels\SOZ\Chunks\Primary.bin
+#dir	Levels\SOZ\Collision
+#split	0x00253874,0x00253E74,Levels\SOZ\Collision\1.bin
+#dir	Levels\SOZ\Layout
+#split	0x00267814,0x00268680,Levels\SOZ\Layout\1.bin
+#split	0x00268680,0x00269498,Levels\SOZ\Layout\2.bin
+#dir	Levels\SOZ\Object Pos
+#split	0x004023A6,0x004031B6,Levels\SOZ\Object Pos\1.bin
+#split	0x004031B6,0x00403D38,Levels\SOZ\Object Pos\2.bin
+#dir	Levels\SOZ\Palettes
+#split	0x00270676,0x002706D6,Levels\SOZ\Palettes\1.bin
+#split	0x002706D6,0x00270736,Levels\SOZ\Palettes\2.bin
+#split	0x00270736,0x00270796,Levels\SOZ\Palettes\Act 1 Clone.bin
+#split	0x00270796,0x002707F6,Levels\SOZ\Palettes\Act 2 Extra.bin
+#dir	Levels\SOZ\Ring Pos
+#split	0x00403D38,0x0040433A,Levels\SOZ\Ring Pos\1.bin
+#split	0x0040433A,0x004047B0,Levels\SOZ\Ring Pos\2.bin
+#dir	Levels\SOZ\Start Location
+#dir	Levels\SOZ\Start Location\Knuckles
+#split	0x003F7024,0x003F7028,Levels\SOZ\Start Location\Knuckles\1.bin
+#split	0x003F7028,0x003F702C,Levels\SOZ\Start Location\Knuckles\2.bin
+#dir	Levels\SOZ\Start Location\Sonic
+#split	0x003F6F64,0x003F6F68,Levels\SOZ\Start Location\Sonic\1.bin
+#split	0x003F6F68,0x003F6F6C,Levels\SOZ\Start Location\Sonic\2.bin
+#dir	Levels\SOZ\Tiles
+#split	0x00169662,0x0016C544,Levels\SOZ\Tiles\Act 1 Secondary.bin
+#split	0x0016CB16,0x0016FA18,Levels\SOZ\Tiles\Act 2 Secondary.bin
+#split	0x00163490,0x00166A32,Levels\SOZ\Tiles\Primary.bin
+#dir	Levels\SSZ
+#dir	Levels\SSZ\Blocks
+#split	0x00187D76,0x00187DF6,Levels\SSZ\Blocks\Act 1 Primary.bin
+#split	0x00188148,0x00188F48,Levels\SSZ\Blocks\Act 1 Secondary.bin
+#split	0x0018E5CC,0x0018EE3C,Levels\SSZ\Blocks\Act 2.bin
+#dir	Levels\SSZ\Chunks
+#split	0x001880F8,0x00188148,Levels\SSZ\Chunks\Act 1 Primary.bin
+#split	0x0018B09A,0x0018D60A,Levels\SSZ\Chunks\Act 1 Secondary.bin
+#split	0x00190A9E,0x001910CE,Levels\SSZ\Chunks\Act 2.bin
+#dir	Levels\SSZ\Collision
+#split	0x00254A74,0x00255074,Levels\SSZ\Collision\1.bin
+#split	0x00255074,0x00255674,Levels\SSZ\Collision\2.bin
+#dir	Levels\SSZ\Layout
+#split	0x0026B048,0x0026BCB8,Levels\SSZ\Layout\1.bin
+#split	0x0026BCB8,0x0026BE34,Levels\SSZ\Layout\2.bin
+#dir	Levels\SSZ\Object Pos
+#split	0x00410F9A,0x0041149E,Levels\SSZ\Object Pos\1.bin
+#split	0x0041149E,0x004114C2,Levels\SSZ\Object Pos\2.bin
+#split	0x004143FE,0x00414404,Levels\SSZ\Object Pos\Ending.bin
+#dir	Levels\SSZ\Palettes
+#split	0x002708B6,0x00270916,Levels\SSZ\Palettes\1.bin
+#split	0x00270916,0x00270976,Levels\SSZ\Palettes\2.bin
+#dir	Levels\SSZ\Ring Pos
+#split	0x004114C2,0x00411794,Levels\SSZ\Ring Pos\1.bin
+#split	0x00411794,0x004117A2,Levels\SSZ\Ring Pos\2.bin
+#split	0x00414404,0x00414412,Levels\SSZ\Ring Pos\Ending.bin
+#dir	Levels\SSZ\Start Location
+#dir	Levels\SSZ\Start Location\Knuckles
+#split	0x003F7034,0x003F7038,Levels\SSZ\Start Location\Knuckles\1.bin
+#split	0x003F7038,0x003F703C,Levels\SSZ\Start Location\Knuckles\2.bin
+#split	0x003F7050,0x003F7054,Levels\SSZ\Start Location\Knuckles\Ending.bin
+#dir	Levels\SSZ\Start Location\Sonic
+#split	0x003F6F74,0x003F6F78,Levels\SSZ\Start Location\Sonic\1.bin
+#split	0x003F6F78,0x003F6F7C,Levels\SSZ\Start Location\Sonic\2.bin
+#split	0x003F6F90,0x003F6F94,Levels\SSZ\Start Location\Sonic\Ending.bin
+#dir	Levels\SSZ\Tiles
+#split	0x00187DF6,0x001880F8,Levels\SSZ\Tiles\Act 1 Primary.bin
+#split	0x00188F48,0x0018B09A,Levels\SSZ\Tiles\Act 1 Secondary.bin
+#split	0x0018EE3C,0x00190A9E,Levels\SSZ\Tiles\Act 2.bin
