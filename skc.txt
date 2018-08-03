@@ -7,6 +7,18 @@
 #dir	General\Ending\Palettes
 #split	0x00270976,0x002709D6,General\Ending\Palettes\Ending 1.bin
 #split	0x002709D6,0x00270A36,General\Ending\Palettes\Ending 2.bin
+#dir	General\Special Stage
+#dir	General\Special Stage\Layout
+#split	0x003F7518,0x003F7920,General\Special Stage\Layout\S3 1.bin
+#split	0x003F7920,0x003F7D28,General\Special Stage\Layout\S3 2.bin
+#split	0x003F7D28,0x003F8130,General\Special Stage\Layout\S3 3.bin
+#split	0x003F8130,0x003F8538,General\Special Stage\Layout\S3 4.bin
+#split	0x003F8538,0x003F8940,General\Special Stage\Layout\S3 5.bin
+#split	0x003F8940,0x003F8D48,General\Special Stage\Layout\S3 6.bin
+#split	0x003F8D48,0x003F9150,General\Special Stage\Layout\S3 7.bin
+#split	0x003F9150,0x003F9558,General\Special Stage\Layout\S3 8.bin
+#split	0x003F955E,0x003F9BFE,General\Special Stage\Layout\SK Set 1.bin
+#split	0x003F9BFE,0x003FBA56,General\Special Stage\Layout\SK Set 2.bin
 #dir	General\Sprites
 #dir	General\Sprites\Knuckles
 #dir	General\Sprites\Knuckles\Palettes
